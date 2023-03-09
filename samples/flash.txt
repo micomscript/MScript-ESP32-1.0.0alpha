@@ -1,0 +1,10 @@
+/*
+*  blink an LED
+*/
+pinMode(25,OUTPUT)
+while(1){
+	digitalWrite(25,1)
+	delay(1000)
+	digitalWrite(25,0)
+	delay(1000)
+}

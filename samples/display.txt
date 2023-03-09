@@ -1,0 +1,18 @@
+/*
+*   Alternate black and white on the display
+*/
+var i,j,count
+count=1
+for(i=0;i<240;i=i+20){
+  for(j=0;j<320;j=j+20){
+	  if(count%2 == 0){
+			setColor(0xffff)
+      		fillRect(i,j,20,20)
+	  }else{
+			setColor(0x0000)
+		    fillRect(i,j,20,20)
+	  }
+	  count++
+  }
+	count++
+}

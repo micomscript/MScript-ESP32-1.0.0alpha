@@ -1,0 +1,15 @@
+/*
+*	play sound from speakers
+*/
+var tones = [494,392,294,392,440,587,0,294,440,494,440,294,392,392]
+
+var a,b
+pinMode(25,OUTPUT)
+ledcSetup(1,12800,12)
+ledcAttachPin(25,1)
+for(a=0;a<=13;a++){
+   	ledcWriteTone(1,tones[a])
+  	delay(100)
+}
+a=0
+ledcWriteTone(1,0)

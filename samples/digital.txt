@@ -1,0 +1,8 @@
+/*
+*	Change the state of the LED depending on the state of the switch
+*/
+pinMode(21,OUTPUT)
+pinMode(22,INPUT_PULLUP)
+while(1){
+  digitalWrite(21,!digitalRead(22))
+}

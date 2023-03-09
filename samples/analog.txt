@@ -1,0 +1,10 @@
+/*
+*  ‰Â•Ï’ïR‚Ì’l‚ğ“Ç‚İæ‚èALED‚Éo—Í
+*/
+pinMode(25,OUTPUT)
+ledcSetup(1,12800,12)
+ledcAttachPin(25,1)
+pinMode(27,INPUT)
+while(1){
+	ledcWrite(1,analogRead(27))
+}
